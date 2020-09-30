@@ -1,6 +1,6 @@
 const vehicles = [
   {
-    word: "אריה",
+    word: "רכבת",
     emoji: "🚂"
   },
   {

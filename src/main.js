@@ -21,7 +21,7 @@ recognition.addEventListener('result', e => {
   }, transcript)
   const numberOfWords = poopScript.split(" ").length;
   console.log('poopScript', poopScript)
-  if (e.results[0].isFinal && poopScript !== transcript && numberOfWords === 1) {
+  if (e.results[0].isFinal) {
     const oldChild = p;
     p = document.createElement('p');
     words.replaceChild(p, oldChild);
