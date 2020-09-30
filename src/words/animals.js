@@ -1,49 +1,328 @@
 const animals = [
   {
-    word: "אריה",
-    emoji: "🦁"
+    emoji: '🐒',
+    word: 'קוף'
   },
   {
-    word: "כלב",
-    emoji: "🐕"
-  },
-
-  {
-    word: "חתול",
-    emoji: "🐈"
+    emoji: '🦍',
+    word: 'גורילה'
   },
   {
-    word: "לוויתן",
-    emoji: "🐋"
+    emoji: '🐕',
+    word: 'כלב'
   },
   {
-    word: "אייל",
-    emoji: "🦌"
+    emoji: '🐕',
+    word: '‍כלב נחיה|זיגי'
   },
   {
-    word: "פינגווין",
-    emoji: "🐧"
+    emoji: '🐩',
+    word: 'פודל'
   },
   {
-    word: "עכבר",
-    emoji: "🐁"
+    emoji: '🐺',
+    word: 'זאב'
   },
   {
-    word: "עז",
-    emoji: "🐐"
+    emoji: '🦊',
+    word: 'שועל'
   },
   {
-    word: "פרה",
-    emoji: "🐄"
+    emoji: '🦝',
+    word: 'רקון'
   },
   {
-    word: "ג׳ירף|ג׳ירפה",
-    emoji: "🦒"
+    emoji: '🐈',
+    word: 'חתול'
   },
   {
-    word: "פיל",
-    emoji: "🐘"
+    emoji: '🦁',
+    word: 'אריה'
+  },
+  {
+    emoji: '🐅',
+    word: 'נמר'
+  },
+  {
+    emoji: '🐎',
+    word: 'סוס'
+  },
+  {
+    emoji: '🦄',
+    word: 'חד קרן'
+  },
+  {
+    emoji: '🦓',
+    word: 'זברה'
+  },
+  {
+    emoji: '🦌',
+    word: 'צבי|איל|אייל'
+  },
+  {
+    emoji: '🐂',
+    word: 'שור'
+  },
+  {
+    emoji: '🐃',
+    word: 'בפאלו'
+  },
+  {
+    emoji: '🐄',
+    word: 'פרה'
+  },
+  {
+    emoji: '🐖',
+    word: 'חזיר'
+  },
+  {
+    emoji: '🐗',
+    word: 'חזיר בר'
+  },
+  {
+    emoji: '🐏',
+    word: 'כבש'
+  },
+  {
+    emoji: '🐑',
+    word: 'כבשה'
+  },
+  {
+    emoji: '🐐',
+    word: 'עז|תיש'
+  },
+  {
+    emoji: '🐪',
+    word: 'גמל'
+  },
+  {
+    emoji: '🦙',
+    word: 'למה|לאמה'
+  },
+  {
+    emoji: '🦒',
+    word: 'ג׳ירף|ג׳ירפה'
+  },
+  {
+    emoji: '🐘',
+    word: 'פיל'
+  },
+  {
+    emoji: '🦏',
+    word: 'קרנף'
+  },
+  {
+    emoji: '🦛',
+    word: 'היפופוטם'
+  },
+  {
+    emoji: '🐁',
+    word: 'עכבר'
+  },
+  {
+    emoji: '🐀',
+    word: 'עכברוש'
+  },
+  {
+    emoji: '🐹',
+    word: 'אוגר'
+  },
+  {
+    emoji: '🐇',
+    word: 'ארנב'
+  },
+  {
+    emoji: '🐿',
+    word: 'סנאי'
+  },
+  {
+    emoji: '🦔',
+    word: 'קיפוד'
+  },
+  {
+    emoji: '🦇',
+    word: 'עטלף'
+  },
+  {
+    emoji: '🐻',
+    word: 'דוב|דב'
+  },
+  {
+    emoji: '🐨',
+    word: 'קואלה'
+  },
+  {
+    emoji: '🐼',
+    word: 'פנדה'
+  },
+  {
+    emoji: '🦘',
+    word: 'קנגרו|קנגורו'
+  },
+  {
+    emoji: '🦡',
+    word: 'גירית'
+  },
+  {
+    emoji: '🦃',
+    word: 'הודו|תרנגול הודו'
+  },
+  {
+    emoji: '🐔',
+    word: 'תרנגולת'
+  },
+  {
+    emoji: '🐓',
+    word: 'תרנגול'
+  },
+  {
+    emoji: '🐥',
+    word: 'אפרוח'
+  },
+  {
+    emoji: '🐦',
+    word: 'ציפור'
+  },
+  {
+    emoji: '🐧',
+    word: 'פינגוין'
+  },
+  {
+    emoji: '🕊',
+    word: 'יונה'
+  },
+  {
+    emoji: '🦅',
+    word: 'נשר'
+  },
+  {
+    emoji: '🦆',
+    word: 'ברווז|ברוז'
+  },
+  {
+    emoji: '🦢',
+    word: 'ברבור'
+  },
+  {
+    emoji: '🦉',
+    word: 'ינשוף'
+  },
+  {
+    emoji: '🦚',
+    word: 'טווס'
+  },
+  {
+    emoji: '🦜',
+    word: 'תוכי'
+  },
+  {
+    emoji: '🐸',
+    word: 'צפרדע'
+  },
+  {
+    emoji: '🐊',
+    word: 'תנין|קרוקודיל'
+  },
+  {
+    emoji: '🐢',
+    word: 'צב'
+  },
+  {
+    emoji: '🦎',
+    word: 'לטאה'
+  },
+  {
+    emoji: '🐍',
+    word: 'נחש'
+  },
+  {
+    emoji: '🐉',
+    word: 'דרקון'
+  },
+  {
+    emoji: '🦕',
+    word: 'דינוזאור'
+  },
+  {
+    emoji: '🦖',
+    word: 'טי-רקס|טי רקס|טירקס'
+  },
+  {
+    emoji: '🐳',
+    word: 'לויתן|לוויתן|לוייתן'
+  },
+  {
+    emoji: '🐬',
+    word: 'דולפין'
+  },
+  {
+    emoji: '🐟',
+    word: 'דג'
+  },
+  {
+    emoji: '🐠',
+    word: 'דג טרופי'
+  },
+  {
+    emoji: '🐡',
+    word: 'אבו נפחא|אבו נפחה'
+  },
+  {
+    emoji: '🦈',
+    word: 'כריש'
+  },
+  {
+    emoji: '🐙',
+    word: 'תמנון'
+  },
+  {
+    emoji: '🐚',
+    word: 'קונכיה|צדף'
+  },
+  {
+    emoji: '🐌',
+    word: 'חלזון|חילזון|שבלול'
+  },
+  {
+    emoji: '🦋',
+    word: 'פרפר'
+  },
+  {
+    emoji: '🐛',
+    word: 'זחל'
+  },
+  {
+    emoji: '🐜',
+    word: 'נמלה'
+  },
+  {
+    emoji: '🐝',
+    word: 'דבורה'
+  },
+  {
+    emoji: '🐞',
+    word: 'חיפושית|פרת משה רבינו|פרת משה רבנו'
+  },
+  {
+    emoji: '🦗',
+    word: 'צרצר'
+  },
+  {
+    emoji: '🕷',
+    word: 'עכביש'
+  },
+  {
+    emoji: '🕸',
+    word: 'קור'
+  },
+  {
+    emoji: '🦂',
+    word: 'עקרב'
+  },
+  {
+    emoji: '🦟',
+    word: 'יתוש'
   }
-]
+];
 
 export default animals;
