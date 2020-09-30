@@ -1,0 +1,8 @@
+{
+  "name": "emojis",
+  "version": "1.0.0",
+  "description": "Learn with Emojis",
+  "main": "scripts.js",
+  "author": "",
+  "license": "ISC"
+}
