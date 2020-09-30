@@ -19,8 +19,9 @@ recognition.addEventListener('result', e => {
   const poopScript = regexWithEmojis.reduce((updatedTranscript, { regex, emoji }) => {
     return updatedTranscript.replace(regex, emoji)
   }, transcript)
+  const numberOfWords = poopScript.split(" ").length;
   console.log('poopScript', poopScript)
-  if (e.results[0].isFinal) {
+  if (e.results[0].isFinal && poopScript !== transcript && numberOfWords === 1) {
     const oldChild = p;
     p = document.createElement('p');
     words.replaceChild(p, oldChild);
